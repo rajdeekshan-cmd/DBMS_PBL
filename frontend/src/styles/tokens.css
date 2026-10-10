@@ -1,0 +1,162 @@
+/* ==========================================================================
+   Woxsen Car Rentals design tokens
+   Themes: light (default, white + chrome) and dark (black + chrome).
+   The resolved theme lives on <html data-theme="light|dark">, set before
+   first paint by the inline script in index.html and by the nav toggle.
+   Shape rule: buttons, chips and pills are full-round. Every surface,
+   input, table and panel is square (radius 0). No exceptions.
+   ========================================================================== */
+:root {
+  color-scheme: light;
+
+  /* ---- Colour ------------------------------------------------------- */
+  --paper: #fbfbf9;          /* page */
+  --paper-2: #f4f4f1;        /* recessed surface */
+  --paper-3: #ebebe7;        /* pressed / skeleton */
+  --ink: #111112;            /* primary text + black accents */
+  --ink-2: #2c2c2f;
+  --muted: #5f5f64;          /* 6.1:1 on --paper */
+  --faint: #8a8a8f;          /* decorative only, never body text */
+  --hairline: #dadad5;
+  --hairline-strong: #c4c4bf;
+  --on-ink: #f6f6f3;
+
+  /* Brushed chrome: the single accent. Used on borders, rules, buttons. */
+  --chrome: linear-gradient(115deg,
+      #f5f5f4 0%, #c3c5c9 18%, #8c8f94 34%, #eceded 50%,
+      #a3a6ab 66%, #dcdddf 82%, #7f8287 100%);
+  --chrome-line: linear-gradient(90deg,
+      rgba(140, 143, 148, 0) 0%, #b9bbbf 18%, #f2f2f1 38%,
+      #8c8f94 60%, #d6d7d9 80%, rgba(140, 143, 148, 0) 100%);
+  --chrome-soft: linear-gradient(160deg, #ffffff 0%, #eeeeec 40%, #d9dadc 70%, #f7f7f6 100%);
+  --sheen: linear-gradient(105deg, transparent 30%, rgba(255, 255, 255, 0.85) 48%, transparent 66%);
+  --sheen-dark: linear-gradient(105deg, transparent 30%, rgba(255, 255, 255, 0.22) 48%, transparent 66%);
+
+  /* Theme-dependent surfaces and effects */
+  --on-chrome: #111112;                       /* text on brushed metal, both themes */
+  --glass: rgba(251, 251, 249, 0.86);         /* scrolled nav */
+  --scrim: rgba(17, 17, 18, 0.28);
+  --cursor-fill: rgba(251, 251, 249, 0.5);
+  --reg-bg: rgba(251, 251, 249, 0.82);
+  --reg-ring: rgba(17, 17, 18, 0.12);
+  --sheen-on-ink: var(--sheen-dark);          /* sheen across solid ink surfaces */
+  --plate-shade: rgba(17, 17, 18, 0.16);
+  --plate-horizon: linear-gradient(180deg, #f9f9f8 0%, #c9cbce 22%, #8d9095 46%, #eeeeed 58%, #a5a8ad 80%, #d9dadc 100%);
+  --plate-glint: rgba(255, 255, 255, 0.75);
+  --plate-rim: rgba(255, 255, 255, 0.9);
+  --streak: radial-gradient(closest-side, rgba(255, 255, 255, 0.95), rgba(214, 216, 220, 0.55) 45%, transparent 75%);
+  --streak-blend: multiply;
+  --process-line: linear-gradient(180deg, #b9bbbf, #f2f2f1 30%, #8c8f94 60%, #d6d7d9);
+  --row-line: #a4a7ac;
+
+  /* Shadows tinted to the paper hue, never pure black */
+  --shadow-sm: 0 1px 2px rgba(40, 40, 36, 0.06);
+  --shadow-md: 0 14px 40px -18px rgba(40, 40, 36, 0.28);
+  --shadow-lg: 0 40px 80px -40px rgba(40, 40, 36, 0.35);
+
+  /* ---- Type --------------------------------------------------------- */
+  --font-script: "Pinyon Script", "Snell Roundhand", cursive;
+  --font-serif: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
+  --font-sans: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --fs-2xs: 0.6875rem;                          /* 11 */
+  --fs-xs: 0.75rem;                             /* 12 */
+  --fs-sm: 0.875rem;                            /* 14 */
+  --fs-base: 1rem;                              /* 16 */
+  --fs-md: 1.125rem;                            /* 18 */
+  --fs-lg: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem);
+  --fs-xl: clamp(1.625rem, 1.3rem + 1.2vw, 2.25rem);
+  --fs-2xl: clamp(2.125rem, 1.5rem + 2.6vw, 3.5rem);
+  --fs-3xl: clamp(2.75rem, 1.6rem + 4.8vw, 5.5rem);
+  --fs-display: clamp(3.25rem, 1.4rem + 7.4vw, 8.25rem);
+
+  --lh-tight: 1.02;
+  --lh-snug: 1.15;
+  --lh-body: 1.6;
+  --tracking-caps: 0.2em;
+
+  /* ---- Space (4px base) --------------------------------------------- */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+  --s-8: 4rem;
+  --s-9: 6rem;
+  --s-10: 8rem;
+  --s-11: 11rem;
+  --gutter: clamp(1rem, 0.4rem + 2.6vw, 3rem);
+  --max: 1400px;
+  --nav-h: 72px;
+
+  /* ---- Motion ------------------------------------------------------- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-1: 180ms;
+  --dur-2: 360ms;
+  --dur-3: 700ms;
+  --dur-4: 1100ms;
+
+  /* ---- Layers (the only z-index values used anywhere) --------------- */
+  --z-raised: 1;
+  --z-nav: 40;
+  --z-progress: 45;
+  --z-drawer: 60;
+  --z-toast: 70;
+  --z-curtain: 80;
+  --z-cursor: 90;
+  --z-preloader: 100;
+}
+
+/* ---- Dark: true black paper, white ink, the same brushed chrome ------ */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --paper: #0c0c0d;
+  --paper-2: #151517;
+  --paper-3: #202023;
+  --ink: #f2f2ee;
+  --ink-2: #d2d2cd;
+  --muted: #a2a2a7;          /* 7.6:1 on --paper */
+  --faint: #6c6c71;
+  --hairline: #2a2a2e;
+  --hairline-strong: #3e3e43;
+  --on-ink: #0d0d0e;
+
+  --chrome-soft: linear-gradient(160deg, #1d1d20 0%, #121214 40%, #28292c 70%, #17171a 100%);
+  --sheen: linear-gradient(105deg, transparent 30%, rgba(255, 255, 255, 0.16) 48%, transparent 66%);
+  --sheen-on-ink: linear-gradient(105deg, transparent 30%, rgba(13, 13, 14, 0.14) 48%, transparent 66%);
+
+  --glass: rgba(12, 12, 13, 0.82);
+  --scrim: rgba(0, 0, 0, 0.62);
+  --cursor-fill: rgba(12, 12, 13, 0.45);
+  --reg-bg: rgba(12, 12, 13, 0.78);
+  --reg-ring: rgba(242, 242, 238, 0.2);
+  --plate-shade: rgba(0, 0, 0, 0.5);
+  --plate-horizon: linear-gradient(180deg, #55575b 0%, #2a2b2e 22%, #8d9095 46%, #1c1d1f 58%, #5c5f63 80%, #2c2d30 100%);
+  --plate-glint: rgba(255, 255, 255, 0.12);
+  --plate-rim: rgba(255, 255, 255, 0.35);
+  --streak: radial-gradient(closest-side, rgba(255, 255, 255, 0.16), rgba(190, 192, 196, 0.08) 45%, transparent 75%);
+  --streak-blend: screen;
+  --process-line: linear-gradient(180deg, #5c5f63, #e6e7e9 30%, #8c8f94 60%, #3d3f42);
+  --row-line: #5c5f63;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 14px 40px -18px rgba(0, 0, 0, 0.8);
+  --shadow-lg: 0 40px 80px -40px rgba(0, 0, 0, 0.9);
+}
+
+/* Theme switch: the new theme is revealed in a circle (see lib/theme.js). */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --nav-h: 64px;
+  }
+}
