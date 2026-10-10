@@ -1,6 +1,4 @@
-<!-- Logo: save the Woxsen University logo as assets/woxsen-logo.png, then uncomment the next line.
-<p align="center"><img src="assets/woxsen-logo.png" alt="Woxsen University" height="90"></p>
--->
+<p align="center"><img src="assets/woxsen-logo.png" alt="Woxsen University" height="110"></p>
 
 # Car Rental Reservation and Vehicle Return Management System
 
