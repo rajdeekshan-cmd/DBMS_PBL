@@ -85,3 +85,18 @@ plus damage charges, plus 18% tax.
 
 The web version also records payments (partial or full), cancels reservations, and
 saves every inspection, fuel reading, damage and invoice in a single transaction.
+
+## Deploy online (Render + Railway)
+
+1. **Database (Railway).** New project, add MySQL. From the MySQL service's Connect tab copy host, port, user and password, then load the scripts from this repo:
+   ```bash
+   mysql -h HOST -P PORT -u USER -p < sql/01_schema.sql
+   mysql -h HOST -P PORT -u USER -p < sql/02_sample_data.sql
+   mysql -h HOST -P PORT -u USER -p < sql/03_queries_and_views.sql
+   ```
+2. **API + website (Render).** New > Blueprint, pick this repo. Render reads `render.yaml` and creates two services. When asked, fill in:
+   - API: `DB_HOST`, `DB_PORT`, `DB_USER`, `DB_PASSWORD` from Railway; `CORS_ORIGINS` = the website's URL.
+   - Website: `VITE_API_URL` = the API's URL plus `/api` (for example `https://woxsen-car-rentals-api.onrender.com/api`).
+3. Every `git push` to `main` redeploys both automatically.
+
+Free Render services sleep when idle, so the first request can take about 30 seconds. The `/admin` desk has no login.
