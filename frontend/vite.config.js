@@ -7,6 +7,8 @@ export default defineConfig(({ mode }) => {
   const target = env.API_PROXY_TARGET || 'http://127.0.0.1:5050'
   const proxy = { '/api': { target, changeOrigin: true } }
   return {
+    // '/' locally; '/DBMS_PBL/' on GitHub Pages (set by the deploy workflow via VITE_BASE)
+    base: env.VITE_BASE || '/',
     plugins: [react()],
     server: { port: 5173, proxy },
     preview: { port: 4173, proxy },

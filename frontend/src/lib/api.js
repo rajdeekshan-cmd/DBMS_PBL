@@ -1,5 +1,6 @@
 // Thin fetch wrapper. Errors carry the backend's clean message (`error`) and kind.
 const BASE = (import.meta.env.VITE_API_URL || '/api').replace(/\/$/, '')
+const DEMO = import.meta.env.VITE_DEMO === '1'
 
 export class ApiError extends Error {
   constructor(message, status, kind) {
@@ -10,6 +11,10 @@ export class ApiError extends Error {
 }
 
 async function request(path, { method = 'GET', body, params } = {}) {
+  if (DEMO) {
+    const { demoRequest } = await import('./demo')
+    return demoRequest(path, { method, params })
+  }
   let url = `${BASE}${path}`
   if (params) {
     const qs = new URLSearchParams(

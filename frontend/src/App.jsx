@@ -40,6 +40,9 @@ export default function App() {
         <a href="#main" className="skip-link">Skip to content</a>
         <Preloader />
         <Cursor />
+        {import.meta.env.VITE_DEMO === '1' && (
+          <p className="demo-flag" role="note">Read-only demo, sample data. Booking and editing need the backend.</p>
+        )}
         <ScrollProgress />
         <Nav />
         <Suspense fallback={<div className="route-fallback" aria-busy="true" />}>

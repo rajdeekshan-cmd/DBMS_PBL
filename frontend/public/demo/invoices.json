@@ -1,0 +1,1 @@
+[{"invoice_id":1,"rental_id":1,"invoice_date":"2026-10-10T18:11:43","rental_charges":3600.0,"extra_km_charges":0.0,"late_fee":0.0,"damage_charges":1500.0,"tax_amount":918.0,"total_amount":6018.0,"status":"PAID","amount_paid":6018.0,"balance":0.0,"customer_name":"Rohan Mehta","registration_no":"MH02AB1234","model_name":"Maruti Swift","branch_name":"Andheri Branch"}]

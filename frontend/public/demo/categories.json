@@ -1,0 +1,1 @@
+[{"category_id":1,"category_name":"Hatchback","seating_capacity":5,"base_daily_rate":1200.0},{"category_id":2,"category_name":"Sedan","seating_capacity":5,"base_daily_rate":1800.0},{"category_id":3,"category_name":"SUV","seating_capacity":7,"base_daily_rate":2500.0},{"category_id":4,"category_name":"Luxury","seating_capacity":5,"base_daily_rate":5000.0}]

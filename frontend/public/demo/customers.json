@@ -1,0 +1,46 @@
+[
+ {
+  "customer_id": 1,
+  "full_name": "Rohan Mehta",
+  "phone": "9000000001",
+  "email": "rohan.mehta@mail.com",
+  "license_number": "MH0120180012345",
+  "license_expiry": "2027-05-10",
+  "address": "Mumbai",
+  "license_expired": 0,
+  "reservations": 1
+ },
+ {
+  "customer_id": 2,
+  "full_name": "Ananya Rao",
+  "phone": "9000000002",
+  "email": "ananya.rao@mail.com",
+  "license_number": "KA0520190067890",
+  "license_expiry": "2026-11-20",
+  "address": "Bengaluru",
+  "license_expired": 0,
+  "reservations": 1
+ },
+ {
+  "customer_id": 3,
+  "full_name": "Karan Verma",
+  "phone": "9000000003",
+  "email": "karan.verma@mail.com",
+  "license_number": "DL0420170099887",
+  "license_expiry": "2025-01-15",
+  "address": "Delhi",
+  "license_expired": 1,
+  "reservations": 0
+ },
+ {
+  "customer_id": 4,
+  "full_name": "Sneha Kulkarni",
+  "phone": "9000000004",
+  "email": "sneha.k@mail.com",
+  "license_number": "MH1220200055443",
+  "license_expiry": "2028-03-30",
+  "address": "Pune",
+  "license_expired": 0,
+  "reservations": 1
+ }
+]

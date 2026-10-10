@@ -86,7 +86,19 @@ plus damage charges, plus 18% tax.
 The web version also records payments (partial or full), cancels reservations, and
 saves every inspection, fuel reading, damage and invoice in a single transaction.
 
-## Deploy online (Render + Railway)
+## Live demo (GitHub Pages)
+
+The website is published by `.github/workflows/pages.yml` on every push to `main`:
+https://rajdeekshan-cmd.github.io/DBMS_PBL/
+
+GitHub Pages hosts only static files, so this build is a **read-only demo**: it shows a
+snapshot of the sample database (`frontend/public/demo/`). Browsing, filters, date-based
+availability, the admin desk and the six reports work; booking, issuing, returning and editing
+are refused with a "demo mode" message. For the full system, run the backend locally (above).
+
+One-time setup: repository **Settings > Pages > Source: GitHub Actions**.
+
+## Full online deployment (optional, Render + Railway)
 
 1. **Database (Railway).** New project, add MySQL. From the MySQL service's Connect tab copy host, port, user and password, then load the scripts from this repo:
    ```bash
