@@ -98,6 +98,12 @@ are refused with a "demo mode" message. For the full system, run the backend loc
 
 One-time setup: repository **Settings > Pages > Source: GitHub Actions**.
 
+## Live demo on Vercel (optional)
+
+Import the repo at vercel.com/new and set **Root Directory** to `frontend`. `frontend/vercel.json`
+already sets the build, the demo mode and the single-page-app rewrites. Vercel hosts only the
+website, so this is the same read-only demo as GitHub Pages.
+
 ## Full online deployment (optional, Render + Railway)
 
 1. **Database (Railway).** New project, add MySQL. From the MySQL service's Connect tab copy host, port, user and password, then load the scripts from this repo:
