@@ -25,8 +25,8 @@ A relational database system in MySQL 8, normalized to 3NF, for managing vehicle
 | Review 2 deck | [`review-2/Review-2-Presentation.pptx`](./review-2/Review-2-Presentation.pptx) |
 | Review 3 (final) deck | [`review-3/Review-3-Presentation.pptx`](./review-3/Review-3-Presentation.pptx) |
 | Final report (PDF) | [`report/Project19_Report.pdf`](./report/Project19_Report.pdf) |
-| HackerRank profile report | [`hackerrank/HackerRank_Deekshan_Raj.docx`](./hackerrank/HackerRank_Deekshan_Raj.docx) |
-| LeetCode profile report | [`leetcode/LeetCode_Deekshan_Raj.docx`](./leetcode/LeetCode_Deekshan_Raj.docx) |
+| HackerRank profile report (DOCX + PDF) | [`hackerrank/HackerRank_Deekshan_Raj.docx`](./hackerrank/HackerRank_Deekshan_Raj.docx), [`hackerrank/HackerRank_Deekshan_Raj.pdf`](./hackerrank/HackerRank_Deekshan_Raj.pdf) |
+| LeetCode profile report (DOCX + PDF) | [`leetcode/LeetCode_Deekshan_Raj.docx`](./leetcode/LeetCode_Deekshan_Raj.docx), [`leetcode/LeetCode_Deekshan_Raj.pdf`](./leetcode/LeetCode_Deekshan_Raj.pdf) |
 | SQL: schema, triggers, sample data, queries, views | [`review-2/sql/`](./review-2/sql) |
 | ER diagram | below, and [`docs/er_diagram.png`](./docs/er_diagram.png) |
 | Architecture diagram | [`docs/architecture.png`](./docs/architecture.png) |
