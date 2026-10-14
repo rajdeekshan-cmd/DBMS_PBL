@@ -3,7 +3,7 @@
 # Car Rental Reservation and Vehicle Return Management System
 
 **Project 19 · DBMS Project-Based Learning (PBL)**
-Bangla Deekshan Raj · Woxsen University · Student ID 25WU0102037 · 2026
+B. Deekshan Raj · Woxsen University · Student ID 25WU0102037 · 2026
 
 A relational database system in MySQL 8, normalized to 3NF, for managing vehicles, customers, reservations, vehicle pickup and return, damage, invoices and payments across a multi-branch car rental agency. Business rules are enforced inside the database (3 triggers, 14 CHECK constraints), and two front ends sit on top of it: a Tkinter desktop app and the **Woxsen Car Rentals** web app.
 
@@ -15,7 +15,7 @@ A relational database system in MySQL 8, normalized to 3NF, for managing vehicle
 | | |
 |---|---|
 | **Live demo** | [rajdeekshan-cmd.github.io/DBMS_PBL](https://rajdeekshan-cmd.github.io/DBMS_PBL/) (sample data runs in the browser) |
-| **Final report** | [`report/Project19_Report.pdf`](./report/Project19_Report.pdf) |
+| **Final report** | [`report/Project19_Report.docx`](./report/Project19_Report.docx) |
 
 ## Submission contents
 
@@ -24,7 +24,7 @@ A relational database system in MySQL 8, normalized to 3NF, for managing vehicle
 | Review 1 deck | [`review-1/Review-1-Presentation.pptx`](./review-1/Review-1-Presentation.pptx) |
 | Review 2 deck | [`review-2/Review-2-Presentation.pptx`](./review-2/Review-2-Presentation.pptx) |
 | Review 3 (final) deck | [`review-3/Review-3-Presentation.pptx`](./review-3/Review-3-Presentation.pptx) |
-| Final report (PDF) | [`report/Project19_Report.pdf`](./report/Project19_Report.pdf) |
+| Final report (Word) | [`report/Project19_Report.docx`](./report/Project19_Report.docx) |
 | SQL: schema, triggers, sample data, queries, views | [`review-2/sql/`](./review-2/sql) |
 | ER diagram | below, and [`docs/er_diagram.png`](./docs/er_diagram.png) |
 | Architecture diagram | [`docs/architecture.png`](./docs/architecture.png) |
