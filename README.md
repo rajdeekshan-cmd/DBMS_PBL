@@ -8,13 +8,13 @@ B. Deekshan Raj · Woxsen University · Student ID 25WU0102037 · 2026
 A relational database system in MySQL 8, normalized to 3NF, for managing vehicles, customers, reservations, vehicle pickup and return, damage, invoices and payments across a multi-branch car rental agency. Business rules are enforced inside the database (3 triggers, 14 CHECK constraints), and two front ends sit on top of it: a Tkinter desktop app and the **Woxsen Car Rentals** web app.
 
 > ### ▶ [Try it now: live demo (no install)](https://rajdeekshan-cmd.github.io/DBMS_PBL/)
-> Opens in any browser and runs on a built-in snapshot of the sample data, so no database is needed. It is read-only: browsing, filters, date-based availability and the reports work, while booking and editing show a "demo mode" message. The full MySQL-backed version is under [Run the prototype](#run-the-prototype) below.
+> The complete system runs in your browser on built-in sample data, so no database or install is needed. Book a car, issue it, return it with damage, see the invoice build line by line, record payments and open all six reports. The same business rules as the MySQL version apply (overlapping bookings and expired licences are refused). Changes stay in your own browser tab and reset when you close it (there is a **Reset demo** button). The MySQL-backed version is under [Run the prototype](#run-the-prototype) below.
 
 ![Woxsen Car Rentals landing page](./review-3/screenshots/01_landing_hero.png)
 
 | | |
 |---|---|
-| **Live demo** | [rajdeekshan-cmd.github.io/DBMS_PBL](https://rajdeekshan-cmd.github.io/DBMS_PBL/) (sample data runs in the browser) |
+| **Live demo** | [rajdeekshan-cmd.github.io/DBMS_PBL](https://rajdeekshan-cmd.github.io/DBMS_PBL/) (fully working, sample data runs in the browser) |
 | **Final report** | [`report/Project19_Report.pdf`](./report/Project19_Report.pdf) |
 
 ## Submission contents
@@ -199,6 +199,10 @@ All captured from the running web app on the sample database (`review-3/screensh
 
 ![Return vehicle](./review-3/screenshots/12_admin_return_vehicle.png)
 
+**The invoice builds line by line (rental, extra km, late fee, damage, 18% tax, total)**
+
+![Invoice breakdown](./review-3/screenshots/21_invoice_breakdown.png)
+
 **Payments and invoices**
 
 ![Payments](./review-3/screenshots/13_admin_payments.png)
@@ -293,4 +297,4 @@ npm run dev                               # http://localhost:5173  (admin: /admi
 
 The web app also adds what the desktop app lacked: payments (partial or full), reservation cancellation, damage saved with the return inspection, and clean error messages for every database rule.
 
-The live demo is published from this repository by GitHub Actions (`.github/workflows/pages.yml`) on every push to `main`.
+The live demo is built from this repository by GitHub Actions (`.github/workflows/pages.yml`) on every push to `main`. Its in-browser engine (`review-3/web/frontend/src/lib/demo.js`) follows the same endpoints, validation messages, trigger rules and invoice maths as the Flask API, and starts from a snapshot of the sample database (`review-3/web/frontend/public/demo/`).

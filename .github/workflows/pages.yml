@@ -1,5 +1,6 @@
 # Builds the website and publishes it to GitHub Pages on every push to main.
-# The Pages build is a read-only demo (sample data snapshot in review-3/web/frontend/public/demo).
+# The Pages build is a fully working demo: an in-browser engine (src/lib/demo.js) replaces the Flask API,
+# starting from a sample-data snapshot in review-3/web/frontend/public/demo.
 name: Deploy to GitHub Pages
 
 on:

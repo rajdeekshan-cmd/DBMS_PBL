@@ -797,4 +797,15 @@ textarea.field__input ~ .field__line { display: none; }
   color: var(--ink-2);
   font-size: var(--fs-xs);
   box-shadow: inset 0 0 0 1px var(--hairline-strong), var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+}
+.demo-flag__reset {
+  flex: none;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  padding: 2px 0;
 }

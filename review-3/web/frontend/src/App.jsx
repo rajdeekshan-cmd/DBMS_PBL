@@ -41,7 +41,12 @@ export default function App() {
         <Preloader />
         <Cursor />
         {import.meta.env.VITE_DEMO === '1' && (
-          <p className="demo-flag" role="note">Read-only demo, sample data. Booking and editing need the backend.</p>
+          <p className="demo-flag" role="note">
+            <span>Live demo: sample data runs in your browser and resets when you close the tab.</span>
+            <button type="button" className="demo-flag__reset" onClick={() => import('./lib/demo').then((m) => m.resetDemo())}>
+              Reset demo
+            </button>
+          </p>
         )}
         <ScrollProgress />
         <Nav />

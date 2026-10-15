@@ -13,7 +13,7 @@ export class ApiError extends Error {
 async function request(path, { method = 'GET', body, params } = {}) {
   if (DEMO) {
     const { demoRequest } = await import('./demo')
-    return demoRequest(path, { method, params })
+    return demoRequest(path, { method, params, body })
   }
   let url = `${BASE}${path}`
   if (params) {
