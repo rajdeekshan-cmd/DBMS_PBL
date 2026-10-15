@@ -15,6 +15,7 @@ A relational database system in MySQL 8, normalized to 3NF, for managing vehicle
 | | |
 |---|---|
 | **Live demo** | [rajdeekshan-cmd.github.io/DBMS_PBL](https://rajdeekshan-cmd.github.io/DBMS_PBL/) (fully working, sample data runs in the browser) |
+| **Video presentation** | see [`video/VIDEO_LINK.md`](./video/VIDEO_LINK.md) |
 | **Final report** | [`report/Project19_Report.pdf`](./report/Project19_Report.pdf) |
 
 ## Submission contents
@@ -25,6 +26,7 @@ A relational database system in MySQL 8, normalized to 3NF, for managing vehicle
 | Review 2 deck | [`review-2/Review-2-Presentation.pptx`](./review-2/Review-2-Presentation.pptx) |
 | Review 3 (final) deck | [`review-3/Review-3-Presentation.pptx`](./review-3/Review-3-Presentation.pptx) |
 | Final presentation (Reviews 2 and 3 combined, 13 slides) | [`review-3/Final-Presentation.pptx`](./review-3/Final-Presentation.pptx) |
+| Video presentation | [`video/VIDEO_LINK.md`](./video/VIDEO_LINK.md), script: [`video/VIDEO_SCRIPT.md`](./video/VIDEO_SCRIPT.md) |
 | Final report (PDF) | [`report/Project19_Report.pdf`](./report/Project19_Report.pdf) |
 | HackerRank profile report (DOCX + PDF) | [`hackerrank/HackerRank_Deekshan_Raj.docx`](./hackerrank/HackerRank_Deekshan_Raj.docx), [`hackerrank/HackerRank_Deekshan_Raj.pdf`](./hackerrank/HackerRank_Deekshan_Raj.pdf) |
 | LeetCode profile report (DOCX + PDF) | [`leetcode/LeetCode_Deekshan_Raj.docx`](./leetcode/LeetCode_Deekshan_Raj.docx), [`leetcode/LeetCode_Deekshan_Raj.pdf`](./leetcode/LeetCode_Deekshan_Raj.pdf) |
@@ -250,6 +252,7 @@ report/     final report (PDF)
 hackerrank/ HackerRank profile report
 leetcode/   LeetCode profile report
 certificate/  course completion certificate
+video/      link to the video presentation and its script
 docs/       ER diagram, architecture diagram, logo
 ```
 
