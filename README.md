@@ -27,6 +27,7 @@ A relational database system in MySQL 8, normalized to 3NF, for managing vehicle
 | Final report (PDF) | [`report/Project19_Report.pdf`](./report/Project19_Report.pdf) |
 | HackerRank profile report (DOCX + PDF) | [`hackerrank/HackerRank_Deekshan_Raj.docx`](./hackerrank/HackerRank_Deekshan_Raj.docx), [`hackerrank/HackerRank_Deekshan_Raj.pdf`](./hackerrank/HackerRank_Deekshan_Raj.pdf) |
 | LeetCode profile report (DOCX + PDF) | [`leetcode/LeetCode_Deekshan_Raj.docx`](./leetcode/LeetCode_Deekshan_Raj.docx), [`leetcode/LeetCode_Deekshan_Raj.pdf`](./leetcode/LeetCode_Deekshan_Raj.pdf) |
+| Certificate: Introduction to the Fundamentals of Databases | [`certificate/Database_Fundamentals_Certificate.pdf`](./certificate/Database_Fundamentals_Certificate.pdf) |
 | SQL: schema, triggers, sample data, queries, views | [`review-2/sql/`](./review-2/sql) |
 | ER diagram | below, and [`docs/er_diagram.png`](./docs/er_diagram.png) |
 | Architecture diagram | [`docs/architecture.png`](./docs/architecture.png) |
@@ -247,6 +248,7 @@ review-3/   final deck and the working prototype
 report/     final report (PDF)
 hackerrank/ HackerRank profile report
 leetcode/   LeetCode profile report
+certificate/  course completion certificate
 docs/       ER diagram, architecture diagram, logo
 ```
 
